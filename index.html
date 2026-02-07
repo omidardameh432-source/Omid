@@ -5,20 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Omid Project</title>
     <style>
-        body { background: #000; color: #fff; text-align: center; font-family: sans-serif; padding-top: 80px; }
+        body { background: #000; color: #fff; text-align: center; font-family: sans-serif; padding: 40px 20px; }
+        h2 { color: #ffcc00; margin-bottom: 10px; font-size: 24px; }
         .insta-btn { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); 
-                     color: white; padding: 15px 35px; text-decoration: none; border-radius: 50px; 
-                     display: inline-block; font-weight: bold; font-size: 20px; box-shadow: 0 4px 15px rgba(255,0,0,0.5); }
-        audio { margin-top: 50px; width: 85%; max-width: 400px; }
-        h1 { margin-bottom: 30px; }
+                     color: white; padding: 12px 35px; text-decoration: none; border-radius: 50px; 
+                     display: inline-block; font-weight: bold; margin: 20px 0; box-shadow: 0 4px 15px rgba(220, 39, 67, 0.4); }
+        .contact-box { background: #111; padding: 20px; border-radius: 15px; max-width: 350px; margin: 20px auto; border: 1px solid #333; }
+        input, textarea { width: 100%; padding: 10px; margin-top: 10px; border-radius: 8px; border: 1px solid #444; background: #222; color: #fff; box-sizing: border-box; font-family: sans-serif; }
+        button { background: #fff; color: #000; border: none; padding: 10px; border-radius: 8px; margin-top: 15px; cursor: pointer; font-weight: bold; width: 100%; }
+        audio { margin-top: 30px; width: 100%; max-width: 350px; }
+        p { font-size: 14px; color: #888; margin-top: 10px; }
     </style>
 </head>
 <body>
-    <h1>به صفحه من خوش آمدید 🏍️</h1>
-    <a href="https://instagram.com/Omid_a.hw" class="insta-btn">اینستاگرام من</a>
-    <br>
+
+    <h2>چه نگاه زیبایی 😍😄</h2>
+    
+    <a href="https://instagram.com/Omid_a.hw" class="insta-btn">صفحه اینستاگرام من</a>
+
+    <div class="contact-box">
+        <h3 style="margin:0; font-size: 18px;">برام پیام بذار 👇</h3>
+        <form action="https://formspree.io/f/YOUR_ID" method="POST">
+            <input type="text" name="name" placeholder="نام شما" required>
+            <textarea name="message" rows="3" placeholder="متن پیام..." required></textarea>
+            <button type="submit">ارسال پیام</button>
+        </form>
+        <p>(پیام شما مستقیم به ایمیل من میاد)</p>
+    </div>
+
     <audio controls>
         <source src="d.mp3" type="audio/mpeg">
     </audio>
+
 </body>
 </html>
