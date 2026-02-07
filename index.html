@@ -3,39 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Omid Project</title>
+    <title>صفحه شخصی امید</title>
     <style>
-        body { background: #000; color: #fff; text-align: center; font-family: sans-serif; padding: 40px 20px; }
-        h2 { color: #ffcc00; margin-bottom: 10px; font-size: 24px; }
-        .insta-btn { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); 
-                     color: white; padding: 12px 35px; text-decoration: none; border-radius: 50px; 
-                     display: inline-block; font-weight: bold; margin: 20px 0; box-shadow: 0 4px 15px rgba(220, 39, 67, 0.4); }
-        .contact-box { background: #111; padding: 20px; border-radius: 15px; max-width: 350px; margin: 20px auto; border: 1px solid #333; }
-        input, textarea { width: 100%; padding: 10px; margin-top: 10px; border-radius: 8px; border: 1px solid #444; background: #222; color: #fff; box-sizing: border-box; font-family: sans-serif; }
-        button { background: #fff; color: #000; border: none; padding: 10px; border-radius: 8px; margin-top: 15px; cursor: pointer; font-weight: bold; width: 100%; }
-        audio { margin-top: 30px; width: 100%; max-width: 350px; }
-        p { font-size: 14px; color: #888; margin-top: 10px; }
+        body { background: #000; color: #fff; text-align: center; font-family: sans-serif; padding: 50px 20px; }
+        h2 { color: #ffcc00; margin-bottom: 30px; font-size: 28px; text-shadow: 0 0 10px rgba(255,204,0,0.5); }
+        .btn { color: white; padding: 15px 10px; text-decoration: none; border-radius: 50px; 
+               display: block; font-weight: bold; font-size: 18px; margin: 15px auto; width: 250px; box-shadow: 0 4px 15px rgba(0,0,0,0.4); transition: 0.3s; }
+        .insta { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
+        .rubika { background: linear-gradient(to right, #4a00e0, #8e2de2); }
+        .btn:active { transform: scale(0.95); }
+        audio { margin-top: 40px; width: 100%; max-width: 350px; border-radius: 50px; }
+        .footer-text { margin-top: 30px; color: #666; font-size: 13px; letter-spacing: 1px; }
     </style>
 </head>
 <body>
 
     <h2>چه نگاه زیبایی 😍😄</h2>
     
-    <a href="https://instagram.com/Omid_a.hw" class="insta-btn">صفحه اینستاگرام من</a>
-
-    <div class="contact-box">
-        <h3 style="margin:0; font-size: 18px;">برام پیام بذار 👇</h3>
-        <form action="https://formspree.io/f/YOUR_ID" method="POST">
-            <input type="text" name="name" placeholder="نام شما" required>
-            <textarea name="message" rows="3" placeholder="متن پیام..." required></textarea>
-            <button type="submit">ارسال پیام</button>
-        </form>
-        <p>(پیام شما مستقیم به ایمیل من میاد)</p>
-    </div>
-
-    <audio controls>
+    <a href="https://instagram.com/Omid_a.hw" class="btn insta">پیج اینستاگرام من</a>
+    
+    <a href="https://rubika.ir/Omid_a_hw" class="btn rubika">پیام در روبیکا</a>
+    
+    <br>
+    <audio controls autoplay>
         <source src="d.mp3" type="audio/mpeg">
     </audio>
+
+    <div class="footer-text">OMID_A.HW 🏍️</div>
 
 </body>
 </html>
