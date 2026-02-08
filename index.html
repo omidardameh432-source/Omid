@@ -5,23 +5,115 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OMID_A.HW</title>
     <style>
-        body { background-color: #000; color: #fff; text-align: center; font-family: sans-serif; padding: 30px 15px; margin: 0; }
-        .container { max-width: 400px; margin: 0 auto; border: 2px solid #ff1100; padding: 25px; border-radius: 25px; box-shadow: 0 0 25px #ff1100; background: rgba(10, 0, 0, 0.95); }
-        
-        h2 { color: #ff1100; font-size: 24px; text-shadow: 0 0 15px #ff1100; margin-bottom: 25px; }
-        
-        .btn { display: block; padding: 15px; margin: 12px 0; border-radius: 15px; text-decoration: none; font-weight: bold; color: #fff; border: 1px solid #ff1100; transition: 0.4s; background: rgba(255, 0, 0, 0.05); font-size: 17px; }
-        .btn:hover { background: #ff1100; box-shadow: 0 0 30px #ff1100; color: #000; transform: scale(1.02); }
+        /* استفاده از فونت استاندارد و زیبا */
+        @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap');
 
-        .contact-box { background: #0a0a0a; padding: 20px; border-radius: 18px; margin-top: 30px; border-top: 2px solid #ff1100; box-shadow: 0 -5px 15px rgba(255, 17, 0, 0.1); }
-        h3 { color: #ff1100; font-size: 19px; margin-bottom: 10px; }
-        input, textarea { width: 100%; padding: 12px; margin-top: 10px; border-radius: 10px; border: 1px solid #333; background: #000; color: #fff; box-sizing: border-box; outline: none; font-family: sans-serif; }
-        input:focus, textarea:focus { border-color: #ff1100; box-shadow: 0 0 5px #ff1100; }
-        button { background: #ff1100; color: #000; border: none; padding: 14px; border-radius: 10px; margin-top: 15px; cursor: pointer; font-weight: bold; width: 100%; font-size: 16px; box-shadow: 0 0 20px #ff1100; transition: 0.3s; }
-        button:active { transform: scale(0.95); }
+        body { 
+            background-color: #0d0d0d; 
+            color: #fff; 
+            text-align: center; 
+            font-family: 'Vazirmatn', sans-serif; 
+            padding: 40px 20px; 
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container { 
+            max-width: 380px; 
+            width: 100%;
+            background: #111; 
+            padding: 30px; 
+            border-radius: 30px; 
+            border: 1px solid #333;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.8);
+        }
+
+        h2 { 
+            color: #ffcc00; 
+            font-size: 24px; 
+            text-shadow: 0 0 10px rgba(255, 204, 0, 0.5);
+            margin-bottom: 30px;
+        }
+
+        .insta-btn { 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px; 
+            margin-bottom: 30px;
+            border-radius: 15px; 
+            text-decoration: none; 
+            font-weight: bold; 
+            color: #fff; 
+            background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+            box-shadow: 0 0 20px rgba(220, 35, 102, 0.4);
+            font-size: 18px;
+            transition: 0.3s;
+        }
+        .insta-btn:hover { transform: scale(1.05); }
+
+        .contact-box { 
+            background: #1a1a1a; 
+            padding: 20px; 
+            border-radius: 20px; 
+            border: 2px solid #ff3333; 
+            box-shadow: 0 0 15px rgba(255, 51, 51, 0.3);
+            position: relative;
+        }
         
-        audio { margin-top: 30px; width: 100%; filter: invert(1) hue-rotate(180deg) drop-shadow(0 0 8px #ff1100); border-radius: 50px; }
-        .footer { margin-top: 25px; font-size: 12px; color: #555; letter-spacing: 3px; font-weight: bold; }
+        .contact-box h3 {
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: #fff;
+        }
+
+        input, textarea { 
+            width: 100%; 
+            padding: 12px; 
+            margin-top: 10px; 
+            border-radius: 10px; 
+            border: 1px solid #333; 
+            background: #252525; 
+            color: #fff; 
+            box-sizing: border-box; 
+            outline: none;
+            font-family: 'Vazirmatn', sans-serif;
+        }
+
+        button { 
+            background: #ff3333; 
+            color: #fff; 
+            border: none; 
+            padding: 14px; 
+            border-radius: 10px; 
+            margin-top: 15px; 
+            cursor: pointer; 
+            font-weight: bold; 
+            width: 100%; 
+            font-size: 16px;
+            box-shadow: 0 5px 15px rgba(255, 51, 51, 0.4);
+            transition: 0.3s;
+        }
+        button:hover { background: #ff0000; box-shadow: 0 0 20px #ff0000; }
+
+        .audio-player {
+            margin-top: 30px;
+            width: 100%;
+        }
+        audio { 
+            width: 100%; 
+            filter: invert(1) hue-rotate(180deg) brightness(1.2);
+        }
+
+        .footer { 
+            margin-top: 40px; 
+            font-size: 12px; 
+            color: #555; 
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
     </style>
 </head>
 <body>
@@ -29,8 +121,9 @@
     <div class="container">
         <h2>چه نگاه زیبایی 😍😄</h2>
         
-        <a href="https://instagram.com/Omid_a.hw" class="btn">پیج اینستاگرام من</a>
-        <a href="https://rubika.ir/Omid_a_hw" class="btn">ارسال پیام در روبیکا</a>
+        <a href="https://instagram.com/Omid_a.hw" class="insta-btn">
+            صفحه اینستاگرام من
+        </a>
 
         <div class="contact-box">
             <h3>برام پیام بذار 👇</h3>
@@ -41,9 +134,11 @@
             </form>
         </div>
 
-        <audio controls autoplay>
-            <source src="d.mp3" type="audio/mpeg">
-        </audio>
+        <div class="audio-player">
+            <audio controls autoplay loop>
+                <source src="d.mp3" type="audio/mpeg">
+            </audio>
+        </div>
 
         <div class="footer">DESIGNED BY OMID | 2026 🏍️</div>
     </div>
