@@ -3,33 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>صفحه شخصی امید</title>
+    <title>OMID_A.HW</title>
     <style>
-        body { background: #000; color: #fff; text-align: center; font-family: sans-serif; padding: 50px 20px; }
-        h2 { color: #ffcc00; margin-bottom: 30px; font-size: 28px; text-shadow: 0 0 10px rgba(255,204,0,0.5); }
-        .btn { color: white; padding: 15px 10px; text-decoration: none; border-radius: 50px; 
-               display: block; font-weight: bold; font-size: 18px; margin: 15px auto; width: 250px; box-shadow: 0 4px 15px rgba(0,0,0,0.4); transition: 0.3s; }
-        .insta { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
-        .rubika { background: linear-gradient(to right, #4a00e0, #8e2de2); }
-        .btn:active { transform: scale(0.95); }
-        audio { margin-top: 40px; width: 100%; max-width: 350px; border-radius: 50px; }
-        .footer-text { margin-top: 30px; color: #666; font-size: 13px; letter-spacing: 1px; }
+        body { background-color: #000; color: #fff; text-align: center; font-family: sans-serif; padding: 30px 15px; margin: 0; }
+        .container { max-width: 400px; margin: 0 auto; border: 2px solid #ff1100; padding: 25px; border-radius: 25px; box-shadow: 0 0 25px #ff1100; background: rgba(10, 0, 0, 0.95); }
+        
+        h2 { color: #ff1100; font-size: 24px; text-shadow: 0 0 15px #ff1100; margin-bottom: 25px; }
+        
+        .btn { display: block; padding: 15px; margin: 12px 0; border-radius: 15px; text-decoration: none; font-weight: bold; color: #fff; border: 1px solid #ff1100; transition: 0.4s; background: rgba(255, 0, 0, 0.05); font-size: 17px; }
+        .btn:hover { background: #ff1100; box-shadow: 0 0 30px #ff1100; color: #000; transform: scale(1.02); }
+
+        .contact-box { background: #0a0a0a; padding: 20px; border-radius: 18px; margin-top: 30px; border-top: 2px solid #ff1100; box-shadow: 0 -5px 15px rgba(255, 17, 0, 0.1); }
+        h3 { color: #ff1100; font-size: 19px; margin-bottom: 10px; }
+        input, textarea { width: 100%; padding: 12px; margin-top: 10px; border-radius: 10px; border: 1px solid #333; background: #000; color: #fff; box-sizing: border-box; outline: none; font-family: sans-serif; }
+        input:focus, textarea:focus { border-color: #ff1100; box-shadow: 0 0 5px #ff1100; }
+        button { background: #ff1100; color: #000; border: none; padding: 14px; border-radius: 10px; margin-top: 15px; cursor: pointer; font-weight: bold; width: 100%; font-size: 16px; box-shadow: 0 0 20px #ff1100; transition: 0.3s; }
+        button:active { transform: scale(0.95); }
+        
+        audio { margin-top: 30px; width: 100%; filter: invert(1) hue-rotate(180deg) drop-shadow(0 0 8px #ff1100); border-radius: 50px; }
+        .footer { margin-top: 25px; font-size: 12px; color: #555; letter-spacing: 3px; font-weight: bold; }
     </style>
 </head>
 <body>
 
-    <h2>چه نگاه زیبایی 😍😄</h2>
-    
-    <a href="https://instagram.com/Omid_a.hw" class="btn insta">پیج اینستاگرام من</a>
-    
-    <a href="https://rubika.ir/Omid_a_hw" class="btn rubika">پیام در روبیکا</a>
-    
-    <br>
-    <audio controls autoplay>
-        <source src="d.mp3" type="audio/mpeg">
-    </audio>
+    <div class="container">
+        <h2>چه نگاه زیبایی 😍😄</h2>
+        
+        <a href="https://instagram.com/Omid_a.hw" class="btn">پیج اینستاگرام من</a>
+        <a href="https://rubika.ir/Omid_a_hw" class="btn">ارسال پیام در روبیکا</a>
 
-    <div class="footer-text">OMID_A.HW 🏍️</div>
+        <div class="contact-box">
+            <h3>برام پیام بذار 👇</h3>
+            <form action="https://formspree.io/f/xeelqnvg" method="POST">
+                <input type="text" name="name" placeholder="نام شما" required>
+                <textarea name="message" rows="3" placeholder="متن پیام شما..." required></textarea>
+                <button type="submit">ارسال مستقیم پیام</button>
+            </form>
+        </div>
+
+        <audio controls autoplay>
+            <source src="d.mp3" type="audio/mpeg">
+        </audio>
+
+        <div class="footer">DESIGNED BY OMID | 2026 🏍️</div>
+    </div>
 
 </body>
 </html>
